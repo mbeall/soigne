@@ -6,7 +6,7 @@
  *
  * @package WordPress
  * @subpackage Soigne
- * @since Soigné 1.0
+ * @since Soigné 1.0.1
  */
 class Soigne_Desprit_Widget extends WP_Widget {
 
