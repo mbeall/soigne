@@ -6,7 +6,7 @@
  *
  * @package WordPress
  * @subpackage Soigne
- * @since Soigné 1.0
+ * @since Soigné 1.0.1
  */
 class Soigne_Desprit_Widget extends WP_Widget {
 
@@ -17,7 +17,7 @@ class Soigne_Desprit_Widget extends WP_Widget {
 	 **/
 	function Soigne_Desprit_Widget() {
 		$widget_ops = array( 'classname' => 'widget_soigne_desprit', 'description' => __( 'Use this widget to list your recent Aside, Status, Quote, and Link posts', 'soigne' ) );
-		$this->WP_Widget( 'widget_soigne_desprit', __( 'Soigné Desprit', 'soigne' ), $widget_ops );
+		$this->__construct( 'widget_soigne_desprit', __( 'Soigné Desprit', 'soigne' ), $widget_ops );
 		$this->alt_option_name = 'widget_soigne_desprit';
 
 		add_action( 'save_post', array(&$this, 'flush_widget_cache' ) );
@@ -164,3 +164,4 @@ class Soigne_Desprit_Widget extends WP_Widget {
 		<?php
 	}
 } ?>
+
